@@ -353,9 +353,6 @@ li {
     .nav-active {
         display: flex;
     }
-}
-
-@media (max-width: 768px) {
 
     .logo {
         display: flex;
@@ -436,10 +433,23 @@ li {
     .burger.toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    .rooms, .equipment, .map, .instructions{ 
+        width: 85%; 
+    }
+
+    .instructions ol{ 
+        padding-left: 0; 
+    }
+
+    .contact{
+        margin: 0;
+        padding: 0
+    }
 }
 
-/* New Media Query for iPhone 12 */
-@media (max-width: 390px) {
+@media (max-width: 400px) {
+
     header {
         padding: 10px 15px;
     }
@@ -457,8 +467,10 @@ li {
     }
 
     .service {
-        height: 90px;
+        width: 30%;
+        height: 80px;
         padding: 5px 10px;
+        margin: 10px; 
     }
 
     .service img {
@@ -472,10 +484,19 @@ li {
     .home-container p,
     #home h1 {
         padding: 0 10px;
+        width: 80%; 
+    }
+
+    .casa-caracteristics {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80-90%;
     }
 
     .casa-caracteristics ul {
         padding-left: 10px;
+        width: 80-90%;
     }
 
     .casa-caracteristics ul li {
@@ -489,7 +510,7 @@ li {
 
     .map,
     .instructions {
-        width: 90%;
+        width: 80-90%;
     }
 
     .contact {
@@ -497,7 +518,7 @@ li {
     }
 
     #escapada-rural {
-        width: 90%;
+        width: 80-90%;
     }
 
     .multi-slides img {
