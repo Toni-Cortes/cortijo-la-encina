@@ -524,5 +524,6 @@ li {
     .multi-slides img {
         width: 100%;
         min-width: 100px;
+        margin: 0;
     }
 }
