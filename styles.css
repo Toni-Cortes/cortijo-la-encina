@@ -415,8 +415,8 @@ li {
 @media (max-width: 768px) {
 
     .logo img{
-        margin: auto;
-        height: 30px;
+        
+        height: 40px;
         object-fit: contain;  
     }
 
