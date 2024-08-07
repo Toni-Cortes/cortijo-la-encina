@@ -416,8 +416,7 @@ li {
 
     .logo img{
         margin: auto;
-        height: 40px;
-        width: auto;
+        height: 30px;
         object-fit: contain;  
     }
 
