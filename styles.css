@@ -1,0 +1,598 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0ece6;
+    /* Light beige background */
+    color: #5c5346;
+    /* Dark brown text color */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 98%;
+    background: #f4fcff;
+    /* Light brown header background */
+    color: #5c5346;
+    /* Dark brown text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow effect */
+    position: fixed;
+    /* Ensure proper positioning */
+    z-index: 10;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+
+}
+
+.logo {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+
+    img {
+        margin: auto;
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    a {
+        margin-left: 10px;
+        flex-grow: 1;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #5c5346;
+    /* Dark brown text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8d7d6e;
+    /* Lighter brown text color on hover */
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #5c5346;
+    /* Dark brown lines for burger menu */
+    margin: 5px;
+}
+
+main {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background: #d8c7b0;
+    /* Light brown footer background */
+    color: #5c5346;
+    /* Dark brown text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+
+.slider {
+    width: 100%;
+    height: 70vh;
+    /* Set the fixed height of the slider */
+    overflow: hidden;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    z-index: 2;
+
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.slides img {
+    min-width: 100%;
+    /* Ensures that each image takes up the full width of the slider */
+    height: 70vh;
+    /* Ensures that each image has the same height as the slider */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire slide area */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.multi-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 80px;
+    /* Add some space between sliders */
+}
+
+.multi-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 1);
+    /* Adjust based on number of slides visible at once */
+
+}
+
+.multi-slides img {
+    width: 20%;
+    min-width: 200px;
+    /* Adjust based on number of slides visible at once */
+    height: 40vh;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 2px;
+}
+
+#home p {
+    margin: auto;
+    max-width: 600px;
+    text-align: justify;
+}
+
+#home h1 {
+    font-size: 2rem;
+    margin: auto;
+    padding: 0 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+hr {
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container p {
+    width: 49%;
+}
+
+.services {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    /* width: 25%;  */
+    height: 110px;
+    margin: 5px 20px;
+    padding: 5px 15px;
+    border: 1px solid burlywood;
+    border-radius: 10px;
+
+    img {
+        height: 50px;
+        margin-top: 0px;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
+.casa-caracteristics {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.casa-caracteristics ul {
+    margin: auto;
+    padding-left: 20px;
+    text-align: justify;
+
+    strong {
+        color: #a18d71;
+        font-weight: 600;
+    }
+
+
+}
+
+
+
+
+
+.casa-caracteristics ul li {
+    color: #5c5346;
+    list-style-type: none;
+}
+
+.casa-caracteristics ul li:before {
+    color: #ac9473;
+    float: left;
+    margin: 0 0 0 -1em;
+    width: 1em;
+    content: '\2022';
+}
+
+.rooms {
+    width: 30%;
+}
+
+.equipment {
+    width: 30%;
+}
+
+li {
+    margin-bottom: 10px;
+
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    .map {
+        width: 40%;
+    }
+}
+
+.instructions {
+    width: 40%;
+    text-align: justify;
+}
+
+.instructions ol {
+    list-style: none;
+    /* Remove default styling */
+    counter-reset: item;
+}
+
+.instructions ol li {
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+.instructions ol li:before {
+    content: counter(item) ". ";
+    color: #836843;
+    /* Change the color of the numbers */
+    font-size: 1.5 rem;
+    /* Change the size of the numbers */
+    font-weight: bold;
+    /* Make the numbers bold */
+
+}
+
+.instructions ul li:before {
+    content: none;
+
+}
+
+
+.secondary-button {
+    background-color: #5c5346;
+    font-weight: 700;
+}
+
+
+
+.contact {
+
+    min-width: 300px;
+
+    color: white;
+    background-color: #755f41;
+
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+
+    hr {
+        display: none;
+    }
+
+}
+
+#escapada-rural {
+    margin: auto;
+    width: 40%;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid wheat;
+    border-radius: 6px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    header {
+        width: 95%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+
+    .nav-active {
+        display: flex;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+    nav {
+
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 250px;
+        background-color: #f4fcff;
+        /* Light brown header background */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        transition: right 0.3s ease;
+        z-index: 20;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.nav-active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger .line1,
+    .burger .line2,
+    .burger .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: #5c5346;
+        margin: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Transition effect for burger lines */
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .slider,
+    .home-container,
+    .services,
+    .casa-section,
+    .location-container,
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        width: 95%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+
+
+    }
+
+    .service {
+        width: 35%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .multi-slider {
+        overflow: hidden;
+        position: relative;
+        margin-top: 80px;
+        
+        /* Add some space between sliders */
+    }
+
+    .multi-slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+        
+        /* Adjust based on number of slides visible at once */
+
+    }
+
+    .multi-slides img {
+        width: 100%;
+        min-width: 200px;
+        /* Adjust based on number of slides visible at once */
+        height: 40vh;
+        flex-shrink: 0;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    .home-container p {
+        width: 80%;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+
+    .burger {
+        margin-right: 8px;
+    }
+
+    .casa-caracteristics{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rooms, .equipment{
+        width: 88%; 
+        margin-left: -10px; 
+        ul{
+            text-align: left;
+        }
+    }
+
+    .equipment{
+        margin-top: 30px;
+    }
+
+   .instructions{ 
+        width: 95%; 
+
+        ol{
+            margin: 5%;
+            padding: 0;
+
+            li{
+               margin-bottom: 20px;   
+            }
+        }
+
+        
+    }
+
+    .locatiom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .location-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .map {
+            width: 95%;
+            margin-bottom: 30px; 
+        }
+    }
+     .contact{
+        margin-top: 40px; 
+        a{
+            display: block;
+        }
+     }
+}
