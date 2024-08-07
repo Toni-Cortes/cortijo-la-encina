@@ -415,7 +415,21 @@ li {
 @media (max-width: 768px) {
 
     .logo img{
-        height: 30px;    
+        margin: auto;
+        height: 40px;
+        width: auto;
+        object-fit: contain;  
+    }
+
+    .logo a{
+        margin-left: 10px;
+        flex-grow: 1;
+        text-decoration: none;
+        color: black;
+    }
+
+    .service img{
+        height: 40px ;  
     }
 
     nav {
