@@ -5,9 +5,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #f0ece6;
-    /* Light beige background */
     color: #5c5346;
-    /* Dark brown text color */
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -16,19 +14,14 @@ body {
 header {
     width: 98%;
     background: #f4fcff;
-    /* Light brown header background */
     color: #5c5346;
-    /* Dark brown text color */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    /* Enhanced shadow effect */
     position: fixed;
-    /* Ensure proper positioning */
     z-index: 10;
-
 }
 
 nav {
@@ -37,12 +30,9 @@ nav {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-
-
 }
 
 .logo {
-
     display: flex;
     justify-content: flex-start;
     flex-grow: 1;
@@ -50,20 +40,20 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     align-items: center;
+}
 
-    img {
-        margin: auto;
-        height: 40px;
-        width: auto;
-        object-fit: contain;
-    }
+.logo img {
+    margin: auto;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
 
-    a {
-        margin-left: 10px;
-        flex-grow: 1;
-        text-decoration: none;
-        color: black;
-    }
+.logo a {
+    margin-left: 10px;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
 }
 
 .nav-links {
@@ -78,14 +68,12 @@ nav {
 
 .nav-links a {
     color: #5c5346;
-    /* Dark brown text color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #8d7d6e;
-    /* Lighter brown text color on hover */
 }
 
 .burger {
@@ -98,7 +86,6 @@ nav {
     width: 25px;
     height: 3px;
     background: #5c5346;
-    /* Dark brown lines for burger menu */
     margin: 5px;
 }
 
@@ -115,9 +102,7 @@ section {
 
 footer {
     background: #d8c7b0;
-    /* Light brown footer background */
     color: #5c5346;
-    /* Dark brown text color */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -132,17 +117,14 @@ img {
     margin-top: 20px;
 }
 
-
 .slider {
     width: 100%;
     height: 70vh;
-    /* Set the fixed height of the slider */
     overflow: hidden;
     position: relative;
     margin-top: 0;
     padding-top: 0;
     z-index: 2;
-
 }
 
 .slides {
@@ -155,11 +137,8 @@ img {
 
 .slides img {
     min-width: 100%;
-    /* Ensures that each image takes up the full width of the slider */
     height: 70vh;
-    /* Ensures that each image has the same height as the slider */
     object-fit: cover;
-    /* Maintain aspect ratio and cover the entire slide area */
     margin-top: 0;
     padding-top: 0;
 }
@@ -169,21 +148,17 @@ img {
     overflow: hidden;
     position: relative;
     margin-top: 80px;
-    /* Add some space between sliders */
 }
 
 .multi-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: calc(100% * 1);
-    /* Adjust based on number of slides visible at once */
-
 }
 
 .multi-slides img {
     width: 20%;
     min-width: 200px;
-    /* Adjust based on number of slides visible at once */
     height: 40vh;
     flex-shrink: 0;
     object-fit: cover;
@@ -221,10 +196,8 @@ hr {
 }
 
 .services {
-
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -235,27 +208,21 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-    /* width: 25%;  */
     height: 110px;
     margin: 5px 20px;
     padding: 5px 15px;
     border: 1px solid burlywood;
     border-radius: 10px;
-
-    img {
-        height: 50px;
-        margin-top: 0px;
-    }
-
-    h3 {
-        font-size: 0.9rem;
-    }
-
-
 }
 
+.service img {
+    height: 50px;
+    margin-top: 0px;
+}
+
+.service h3 {
+    font-size: 0.9rem;
+}
 
 .casa-caracteristics {
     display: flex;
@@ -269,18 +236,12 @@ hr {
     margin: auto;
     padding-left: 20px;
     text-align: justify;
-
-    strong {
-        color: #a18d71;
-        font-weight: 600;
-    }
-
-
 }
 
-
-
-
+.casa-caracteristics ul strong {
+    color: #a18d71;
+    font-weight: 600;
+}
 
 .casa-caracteristics ul li {
     color: #5c5346;
@@ -305,16 +266,15 @@ hr {
 
 li {
     margin-bottom: 10px;
-
 }
 
 .location-container {
     display: flex;
     justify-content: space-evenly;
+}
 
-    .map {
-        width: 40%;
-    }
+.map {
+    width: 40%;
 }
 
 .instructions {
@@ -324,7 +284,6 @@ li {
 
 .instructions ol {
     list-style: none;
-    /* Remove default styling */
     counter-reset: item;
 }
 
@@ -336,42 +295,30 @@ li {
 .instructions ol li:before {
     content: counter(item) ". ";
     color: #836843;
-    /* Change the color of the numbers */
-    font-size: 1.5 rem;
-    /* Change the size of the numbers */
+    font-size: 1.5rem;
     font-weight: bold;
-    /* Make the numbers bold */
-
 }
 
 .instructions ul li:before {
     content: none;
-
 }
-
 
 .secondary-button {
     background-color: #5c5346;
     font-weight: 700;
 }
 
-
-
 .contact {
-
     min-width: 300px;
-
     color: white;
     background-color: #755f41;
-
     margin: auto;
     margin-top: 100px;
     padding: 30px;
+}
 
-    hr {
-        display: none;
-    }
-
+.contact hr {
+    display: none;
 }
 
 #escapada-rural {
@@ -403,42 +350,37 @@ li {
         display: flex;
     }
 
-
     .nav-active {
         display: flex;
     }
-
-
-
 }
 
 @media (max-width: 768px) {
 
-    .logo{
+    .logo {
         display: flex;
         align-items: center;
         font-size: 1.3rem;
     }
 
-    .logo img{
-        width: 15%; 
-        height: 40px; 
-        object-fit: contain;  
+    .logo img {
+        width: 15%;
+        height: 40px;
+        object-fit: contain;
     }
 
-    .logo a{
+    .logo a {
         margin-left: 10px;
         flex-grow: 1;
         text-decoration: none;
         color: black;
     }
 
-    .service img{
-        height: 40px ;  
+    .service img {
+        height: 40px;
     }
 
     nav {
-
         align-items: flex-start;
     }
 
@@ -449,7 +391,6 @@ li {
         height: 100%;
         width: 250px;
         background-color: #f4fcff;
-        /* Light brown header background */
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -484,7 +425,6 @@ li {
         transition: transform 0.3s ease;
     }
 
-    /* Transition effect for burger lines */
     .burger.toggle .line1 {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -496,126 +436,72 @@ li {
     .burger.toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+}
 
-    .slider,
-    .home-container,
-    .services,
-    .casa-section,
-    .location-container,
-    .contact {
+/* New Media Query for iPhone 12 */
+@media (max-width: 390px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+
+    .service {
+        height: 90px;
+        padding: 5px 10px;
+    }
+
+    .service img {
+        height: 30px;
+    }
+
+    .service h3 {
+        font-size: 0.8rem;
+    }
+
+    .home-container p,
+    #home h1 {
+        padding: 0 10px;
+    }
+
+    .casa-caracteristics ul {
+        padding-left: 10px;
+    }
+
+    .casa-caracteristics ul li {
+        margin-bottom: 8px;
+    }
+
+    .location-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .services {
-        width: 95%;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0;
-
-
+    .map,
+    .instructions {
+        width: 90%;
     }
 
-    .service {
-        width: 35%;
-        margin: 5px;
-        padding: 5px;
+    .contact {
+        padding: 20px;
     }
 
-    .multi-slider {
-        overflow: hidden;
-        position: relative;
-        margin-top: 80px;
-        
-        /* Add some space between sliders */
-    }
-
-    .multi-slides {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: 100%;
-        
-        /* Adjust based on number of slides visible at once */
-
+    #escapada-rural {
+        width: 90%;
     }
 
     .multi-slides img {
         width: 100%;
-        min-width: 200px;
-        /* Adjust based on number of slides visible at once */
-        height: 40vh;
-        flex-shrink: 0;
-        object-fit: cover;
-        margin: 0px;
+        min-width: 100px;
     }
-
-    .home-container p {
-        width: 80%;
-    }
-
-    nav {
-        align-items: center;
-    }
-
-
-    .burger {
-        margin-right: 8px;
-    }
-
-    .casa-caracteristics{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .rooms, .equipment{
-        width: 88%; 
-        margin-left: -10px; 
-        ul{
-            text-align: left;
-        }
-    }
-
-    .equipment{
-        margin-top: 30px;
-    }
-
-   .instructions{ 
-        width: 95%; 
-
-        ol{
-            margin: 5%;
-            padding: 0;
-
-            li{
-               margin-bottom: 20px;   
-            }
-        }
-
-        
-    }
-
-    .locatiom{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .location-container {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        .map {
-            width: 95%;
-            margin-bottom: 30px; 
-        }
-    }
-     .contact{
-        margin-top: 40px; 
-        a{
-            display: block;
-        }
-
-     }
 }
